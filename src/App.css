@@ -241,8 +241,8 @@ input:checked + .slider:before {
 }
 
 .header-image {
-  width: 120px;
-  height: 120px;
+  width: 180px;
+  height: 180px;
   border-radius: 8px;
   object-fit: cover;
   border: 3px solid var(--primary-color);
@@ -909,10 +909,8 @@ em {
   
   .header-image {
     transform: rotate(0);
-  }
-  
-  .header-image:hover {
-    transform: rotate(0) scale(1.05);
+    width: 160px;
+    height: 160px;
   }
   
   .certificate-badge {
@@ -935,8 +933,8 @@ em {
   }
   
   .header-image {
-    width: 100px;
-    height: 100px;
+    width: 140px;
+    height: 140px;
   }
   
   .contact-item {
@@ -1028,5 +1026,10 @@ em {
   .nav-link {
     font-size: 0.85rem;
     padding: 4px 10px;
+  }
+  
+  .header-image {
+    width: 120px;
+    height: 120px;
   }
 } 

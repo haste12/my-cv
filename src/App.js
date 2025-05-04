@@ -1,6 +1,6 @@
 import React, { useEffect, useState, useRef } from 'react';
 import './App.css';
-import profileImg from './profile.jpg';
+// import profileImg from './profile.jpg';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 import { FaEnvelope, FaPhone, FaMapMarkerAlt, FaUserGraduate, FaUserTie, FaCertificate, FaBriefcase, 
@@ -113,7 +113,7 @@ function App() {
       <header className="header">
         <div className="container header-content">
           <div className="profile-header" data-aos="fade-right">
-            <img src={profileImg} alt="Hasti Mohsin Ramadhan" className="header-image" onError={(e) => e.target.style.display = 'none'} />
+            <img src={process.env.PUBLIC_URL + '/me.jpg'} alt="Hasti Mohsin Ramadhan" className="header-image" />
             <div className="header-info">
               <h1>Haste Mohsin Ramadhan</h1>
               <h2><FaUserGraduate className="title-icon" /> Computer Engineering</h2>
@@ -200,7 +200,7 @@ function App() {
               
               <div className="project-item">
                 <h3><BiLogoReact className="item-icon" /> MovieFlix</h3>
-                <p>Designed and developed a movie streaming platform with personalized recommendations and user reviews. Features responsive UI built with React and integrated with a movie database API for up-to-date content.</p>
+                <p>Designed and developed a movie streaming Moving user can choose 8 categories of movies and watch the movie with good server and good quality .</p>
               </div>
             </section>
           </div>
